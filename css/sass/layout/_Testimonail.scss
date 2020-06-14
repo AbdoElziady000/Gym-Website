@@ -1,0 +1,483 @@
+@import "E:/myyyy/Gymm/css/sass/helpers/_Variables";
+@import "E:/myyyy/Gymm/css/sass/helpers/_mixins";
+@import 'E:/myyyy/Gymm/css/sass/components/_buttall';
+////////////////////////////////////////////////////////////////
+
+
+#Testimonail
+{
+    background-color: #e4e4e4;
+    padding-bottom: 100px;
+    ///////////////////////////////////////////////////////
+//Start Section Testimoanil
+.head
+    {
+        text-align: center;
+        h6
+        {
+            color: $mainColor;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: 3px;
+            margin-top: 90px;
+              .brand-span-one
+        {
+                    position: relative;
+            display: inline-block;
+            background-color: $mainColor;
+            width: 4px;
+            height:21px;
+            margin-bottom: -5px; 
+            margin-right: 11px;
+                   &:after
+        {
+            content: "";
+            background-color: $mainColor;
+            width: 4px;
+            height:15px;
+            position: absolute;
+            top:4px;
+            left: -5px;    
+        }
+               &:before
+        {
+             content: "";
+            background-color: $mainColor;
+            width: 10px;
+            height:4.5px;
+            position: absolute;
+            top:8px;
+            right: -6px;   
+        }
+        }
+        .brand-span-two
+        {
+                    position: relative;
+            display: inline-block;
+            background-color: $mainColor;
+            width: 4px;
+            height:21px;
+            margin-bottom: -5px; 
+            margin-left: 11px;
+                   &:after
+        {
+            content: "";
+            background-color:$mainColor;
+            width: 4px;
+            height:15px;
+            position: absolute;
+            top:4px;
+            right: -5px;    
+        }
+               &:before
+        {
+             content: "";
+            background-color: $mainColor;
+            width: 10px;
+            height:4.5px;
+            position: absolute;
+            top:8px;
+            left: -7px;   
+        }
+        }
+        }
+        h1
+        {
+            color: $BsColor;
+            span
+            {
+                color:$mainColor;
+            }
+        }
+    }
+//////////////////////////////////////////
+    .test
+    {
+        margin-top: 10px;
+        .testsec
+        {
+            margin-top: 60px;
+            p
+            {
+                padding-left: 20px;
+                width: 94%;
+                font-style: italic;
+                border-left: 2px solid $mainColor;
+                position: relative;
+                color: #777;
+            }
+            ////////////////////
+            .secimg
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-top: 37px;
+                img
+                {
+                    width: 110px;
+                    height: 110px;
+                    margin-right: 30px;
+                    box-shadow: 0 2rem 3rem rgba(0,0,0,.240)!important;
+                    @include trans;
+                    cursor: pointer;
+                    &:hover
+                    {
+                         box-shadow: 0 2rem 3rem rgba(0,0,0,.400)!important;
+                        transform: translateY(-17px)
+                    }
+                }
+                h5
+                {
+                    margin-top: 25px;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    position: relative;
+                    &:after
+                    {
+                         content: "Customer";
+                    color: #777;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 2px;
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+        }
+        /////////////////////
+        @media (min-width:$mainsmall) and (max-width:$mainmedium - 1) {
+        .testsec
+            {
+                p
+            {
+               font-size:15px;
+            }
+                .secimg
+                {
+                    img
+                    {
+                         width: 90px;
+                    height: 90px;
+                    margin-right: 20px;
+                    }
+                     h5
+                {
+                   font-size: 18px;
+                     &:after
+                    {
+                    bottom: -10px;
+                    left: 2px;
+                        font-size: 13px;
+                        
+                    }
+                }
+                }
+                
+    }
+            
+    }
+        ////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////
+         @media (max-width:$mainextrasmall) {
+        .testsec
+            {
+                .secimg
+                {
+                    img
+                    {
+                         width: 90px;
+                    height: 90px;
+                    margin-right: 20px;
+                    }
+                     h5
+                {
+                   font-size: 18px;
+                     &:after
+                    {
+                    bottom: -5px;
+                    left: 2px;
+                        font-size: 13px;
+                        
+                    }
+                }
+                }
+                
+    }
+            
+    }
+
+
+//End Section Testimoanil
+}
+    /////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////
+    //Start Section Testimoanil
+    .bmi
+    {
+        height: 630px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .overlay
+        {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(0,0,0,0.6);
+            width: 100%;
+            height: 100%;
+            h4
+            {
+                color: $mainColor;
+                letter-spacing: 3px;
+            font-size: 14px;
+                 padding-top: 70px;
+                 padding-bottom: 15px;
+                text-transform: uppercase;
+                .brand-span-one
+        {
+                    position: relative;
+            display: inline-block;
+            background-color: #fcd307;
+            width: 4px;
+            height:21px;
+            margin-bottom: -5px; 
+            margin-right: 11px;
+                   &:after
+        {
+            content: "";
+            background-color: #fcd307;
+            width: 4px;
+            height:15px;
+            position: absolute;
+            top:4px;
+            left: -6px;    
+        }
+               &:before
+        {
+             content: "";
+            background-color: #fcd307;
+            width: 10px;
+            height:4.5px;
+            position: absolute;
+            top:8px;
+            right: -6px;   
+        }
+        }
+        .brand-span-two
+        {
+                    position: relative;
+            display: inline-block;
+            background-color: #fcd307;
+            width: 4px;
+            height:21px;
+            margin-bottom: -5px; 
+            margin-left: 11px;
+                   &:after
+        {
+            content: "";
+            background-color:#fcd307;
+            width: 4px;
+            height:15px;
+            position: absolute;
+            top:4px;
+            right: -6px;    
+        }
+               &:before
+        {
+             content: "";
+            background-color: #fcd307;
+            width: 10px;
+            height:4.5px;
+            position: absolute;
+            top:8px;
+            left: -7px;   
+        }
+        }
+            }
+            .oneform,.twoform
+            {
+                margin-top: 60px;
+                padding-left: 270px;
+                label
+                {
+                    font-weight: 600;
+                    font-size: 1rem;
+                color: $mainColor;
+                text-transform: uppercase;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+                    span 
+                    {
+                        color: transparent;
+                    }
+                }
+                .form-control
+                {
+                        width: 95%;
+    height: calc(1.5em + .95rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $WsColor;
+    background-color:transparent;
+    background-clip: padding-box;
+    border-radius: 0;
+                    &:focus
+                    {
+                        border:1px solid yellow;
+                        outline: none;
+                       box-shadow: 0 2rem 3rem rgba(252,211,7,.200);
+                    }
+                }
+            }
+            .twoform
+            {
+                margin-top: 20px;
+               
+            }
+            .threeform
+            {
+                margin-top: 80px;
+                .butt
+                {
+                      background-color: $mainColor;
+     color: $BsColor;
+    border: 1px solid  transparent;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+     font-weight: 700;
+    line-height: 1.5;
+     letter-spacing: 1px;
+                    text-transform: uppercase;
+                    margin-left: 0px;
+    transition: all .5s ease-in-out;
+    &:hover
+    {
+         background-color: $BsColor;
+     color: $mainColor;
+        transform: translateY(-20px);
+         box-shadow: 0 2rem 3rem rgba(252,211,7,.200);
+    }
+                }
+            }
+        }
+    }
+    //////////////////////////////////////
+        //////////////////////////////////////
+            @media (min-width:$mainmedium) and (max-width:$mainlarge - 1) {
+            .bmi
+                {
+                    height: 570px;
+                    .overlay
+                    {
+                          h1 
+            {
+                padding-top: 80px;
+                font-size: 40px;
+            }
+                        .oneform,.twoform
+            {
+                padding-left: 190px;
+                    }
+                }
+            }
+    }
+    //////////////////////////////////////////
+     //////////////////////////////////////
+            @media (min-width:$mainsmall) and (max-width:$mainmedium - 1) {
+            .bmi
+                {
+                    height: 720px;
+                    .overlay
+                    {
+                          h1 
+            {
+                padding-top: 80px;
+                font-size: 40px;
+            }
+                        .oneform,.twoform
+            {
+                padding-left: 230px;
+                    }
+                        
+                         .threeform
+            {
+                .butt
+                {
+                        margin-left: -25px;
+                     padding: .8rem 1.5rem;
+                }
+                        }
+                }
+            }
+    }
+    //////////////////////////////////////////
+      //////////////////////////////////////
+            @media (min-width:$mainextrasmall) and (max-width:$mainsmall - 1) {
+            .bmi
+                {
+                    height: 720px;
+                    .overlay
+                    {
+                          h1 
+            {
+                padding-top: 60px;
+                font-size: 40px;
+            }
+                        .oneform,.twoform
+            {
+                padding-left: 130px;
+                    }
+                        
+                         .threeform
+            {
+                .butt
+                {
+                        margin-left: -25px;
+                     padding: 1rem 2rem;
+                    font-size: .8rem;
+                }
+                        }
+                }
+            }
+    }
+    //////////////////////////////////////////
+         //////////////////////////////////////
+             @media (max-width:$mainextrasmall) {
+            .bmi
+                {
+                    height: 770px;
+                    .overlay
+                    {
+                          h1 
+            {
+                padding-top: 60px;
+                font-size: 40px;
+            }
+                        .oneform,.twoform
+            {
+                padding-left: 130px;
+                    }
+                        
+                         .threeform
+            {
+                .butt
+                {
+                        margin-left: 140px;
+                     padding: 1rem 2rem;
+                    font-size: .8rem;
+                }
+                        }
+                }
+            }
+    }
+    //////////////////////////////////////////
+        ///////////////////////////////////////////////    
+    //End Section Testimoanil
+}

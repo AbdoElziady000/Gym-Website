@@ -1,0 +1,160 @@
+@import "E:/myyyy/Gymm/css/sass/helpers/_Variables";
+@import "E:/myyyy/Gymm/css/sass/helpers/_mixins";
+@import 'E:/myyyy/Gymm/css/sass/components/_buttall';
+////////////////////////////////////////////////////////////////
+#about
+{
+//  Component navbar Brand
+    background-color: #e4e4e4;
+    padding-bottom: 110px;
+    //////////////////////////////////    
+    .FirstAbout
+    {
+      margin:140px auto 0px;
+        .subover
+        {
+             height: 330px;
+            width: 100%;
+            margin-bottom: 10px;
+            position: relative;
+                            z-index: 0;
+            .over
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                 border-radius: 7px;
+                height: 100%;
+            width: 100%;
+                @include trans;
+                cursor: pointer;
+                background-color: rgba(0,0,0,0);
+               
+                &:hover
+                {
+            background-color: rgba(0,0,0,0.4);
+                }
+                &:after
+                {
+                    content: "Watch Video";
+                    position: absolute;
+                    color: transparent;
+                    bottom:-70px;
+                    @include trans;
+                    left:223px;
+                    font-size: 18px;
+                    font-family: 'Lato', sans-serif;
+                }
+                &:hover:after
+                {
+                     color: yellow;
+                    bottom:70px;
+                }
+            }
+              .bigfabout
+        {
+            height: 100%;
+            width: 100%;
+            border-radius: 7px;
+            z-index: -1;
+        }        
+             
+        }
+        .buttbig
+        {
+    top: 40%;
+    left: 45%;
+        }
+           
+        .smmm
+        {
+             .smallfabout
+        {
+             overflow: hidden;
+             border-radius: 7px;
+            height: 150px;
+           img {
+                 width: 100%;
+            height: 100%;
+            cursor: pointer;
+                transform: scale(1,1);
+               @include trans; 
+               opacity: 0.9;
+                      &:hover
+            {
+                transform: scale(1.2,1.2);
+                opacity: 1;
+            }
+            }
+        }
+    }
+        .smm2
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    //////////////////////////////////////////////////
+    .SecondAbout
+    {
+        margin:130px auto 0px;
+        margin-left: 20px;
+        h2
+        {
+            color: $BsColor;
+            font-size: 47px;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .main2
+        {
+            color: $mainColor;
+        }
+        .twoh2
+        {
+           color: transparent;
+        }
+        p
+        {
+            margin-top: 20px;
+            margin-bottom:40px;
+            
+        }
+    }
+    ///////////////////////////////////////////
+    ///    mediaquery /////
+//    Size In Section About
+   @media (max-width:$mainsmall - 1)
+    {
+    .SecondAbout
+    {
+       h2
+        {
+         font-size: 34px;
+            }
+        .twoh2
+        {
+            display: none;
+        }
+    }
+        }
+    //////////////////////////////////////////
+//    Small Image In Section About
+    @media (max-width:$mainextrasmall)
+    {
+        .FirstAbout
+        {
+            .smmm
+            {
+                width: 33.333%;
+                height: 150px;
+                display:inline;
+                
+            }
+        }
+    }
+    /////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+}
+    
+

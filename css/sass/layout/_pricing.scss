@@ -1,0 +1,792 @@
+@import "E:/myyyy/Gymm/css/sass/helpers/_Variables";
+@import "E:/myyyy/Gymm/css/sass/helpers/_mixins";
+@import 'E:/myyyy/Gymm/css/sass/components/_buttall';
+////////////////////////////////////////////////////////////////
+#pricing
+{
+   
+//Start Section Prining
+.price
+    {
+     background-color:#e4e4e4;
+        margin-bottom: 0px;
+        .headprice
+        {
+            text-align: center;
+            h6
+             {
+            color: $mainColor;
+            font-weight: 700;
+            margin-bottom: 25px;
+                 padding-top: 120px;
+            letter-spacing: 3px;
+                 .brand-span-one
+        {
+                    position: relative;
+            display: inline-block;
+            background-color: $mainColor;
+            width: 4px;
+            height:21px;
+            margin-bottom: -5px; 
+            margin-right: 11px;
+                   &:after
+        {
+            content: "";
+            background-color: $mainColor;
+            width: 4px;
+            height:15px;
+            position: absolute;
+            top:4px;
+            left: -6px;    
+        }
+               &:before
+        {
+             content: "";
+            background-color: $mainColor;
+            width: 10px;
+            height:4.5px;
+            position: absolute;
+            top:8px;
+            right: -6px;   
+        }
+        }
+        .brand-span-two
+        {
+                    position: relative;
+            display: inline-block;
+            background-color: $mainColor;
+            width: 4px;
+            height:21px;
+            margin-bottom: -5px; 
+            margin-left: 11px;
+                   &:after
+        {
+            content: "";
+            background-color:$mainColor;
+            width: 4px;
+            height:15px;
+            position: absolute;
+            top:4px;
+            right: -6px;    
+        }
+               &:before
+        {
+             content: "";
+            background-color: $mainColor;
+            width: 10px;
+            height:4.5px;
+            position: absolute;
+            top:8px;
+            left: -7px;   
+        }
+        }
+        }
+        h1
+        {
+            color: $BsColor;
+            margin-bottom: 40px;
+            span
+            {
+                color:$mainColor;
+            }
+        }
+        }
+        ////////////////////////////////////////
+        .tableprice
+        {
+            margin: 80px auto 110px;
+           .card
+            {
+                 box-shadow: 0 1rem 1rem rgba(0,0,0,.100)!important;
+                @include trans;
+                cursor: pointer;
+                &:hover
+                {
+                    transform: translateY(-40px)scale(1.1,1.1);
+                    box-shadow: 0 1rem 1rem rgba(0,0,0,.400);
+                }
+                .card-header
+                {
+                    background-color: #e6e6e6;
+                    position: relative;
+                    overflow: hidden;
+                     h6
+            {
+                margin-top: 30px;
+                margin-bottom: 10px;
+                color: $BsColor;
+                text-transform: capitalize;
+                font-size: 15px;
+                letter-spacing: 1px;
+
+            }
+            h1
+            {
+                font-size: 70px;
+                color:  $mainColor;
+                position: relative;
+                margin: 10px auto;
+                &:after
+                {
+                    position: absolute;
+                    content: "$";
+                    top: 10px;
+                    left: 110px;
+                    color: $BsColor;
+                    font-size: 29px;
+                }
+            }
+                    p
+                    {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                ///////////////////////////
+                .card-body
+                {
+                    h5
+                    {
+                        color:$BsColor;
+                        font-size:1.15rem;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+                    ul 
+                    {
+                        margin-top: 20px;
+                       li 
+                        {
+                               color: #777;
+    text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 500;
+                            border-bottom: 1px solid #c7c3c3;
+                            padding-bottom:15px;
+                            padding-top:10px;
+                        }
+                    }
+                    .butt
+                    {
+                        margin: 20px auto 30px;
+    padding: .9rem 1.6rem;
+    font-size: .8rem;
+                        text-transform: uppercase;
+     box-shadow: 0 2rem 3rem rgba(0,0,0,.200);
+    &:hover
+    {
+         box-shadow: 0 2rem 3rem rgba(0,0,0,.400);
+    }
+                    }
+                }
+            }
+            ////////////////////////////////////////////////////////////////////
+        }
+        /////////////////////////////////////////
+           .tableqw
+    {
+          .card
+        {
+            .card-header
+            {
+          &:after
+                    {
+                        content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    right: 0px;
+    border-style: solid;
+    border-width: 0px 65px 65px 0px;
+    border-color:  #E5E5E5 $BsColor;
+    position: absolute;
+                }
+                
+            }
+        }
+        }
+        ////////////////////////////////////
+        
+        .tableqw
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 95px;
+                        }
+                    }
+            }
+        }
+    }
+        //////////////////////////
+        .tableqq
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 80px;
+                        }
+                    }
+            }
+        }
+    }
+        /////////////////////////////////////////////////
+        @media (min-width:$mainmedium) and (max-width:$mainlarge - 1) {
+        .tableprice
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                    
+                        font-size: 60px;
+                        &:after
+                        {
+                    left: 85px;
+                        }
+                    }
+            }
+        }
+    }
+            ///////////////
+             .tableqw
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 75px;
+                        }
+                    }
+            }
+        }
+    }
+        //////////////////////////
+        .tableqq
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 60px;
+                        }
+                    }
+            }
+        }
+    }
+    }
+        /////////////////////////////////////////
+               @media (min-width:$mainsmall) and (max-width:$mainmedium - 1) {
+        .tableprice
+                   {
+                        .card
+        {
+            .card-header
+            {
+                 h6
+                {
+                    font-size: 14px;
+                }
+                 h1
+                    {
+                        font-size: 50px;
+                        &:after
+                        {
+                    left: 55px;
+                        }
+                    }
+                p 
+                {
+                    font-size: 13px;
+                }
+            }
+            .card-body
+            {
+                h5
+                {
+               font-size: 1rem;
+                }
+                ul 
+                {
+                    li {
+                        font-size: 14px;
+                    }
+                }
+                .butt
+                {
+                    padding: .8rem 1rem;
+                }
+            }
+            
+        }
+                   }
+            ///////////////
+             .tableqw
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 40px;
+                        }
+                    }
+                  &:after
+                    {
+    border-width: 40px 40px 0px 0px;
+                
+            }
+        }
+    }
+                   }
+        //////////////////////////
+        .tableqq
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 25px;
+                        }
+                    }                
+            }
+            
+        }
+    }
+///////////////////////////////////////////////
+///////////////////////////////////////////////                   
+                   
+    }
+        ////////////////////
+          @media (min-width:$mainextrasmall) and (max-width:$mainsmall - 1) {
+        .tableprice
+             {
+                 margin:40px auto;
+                 margin-left: 50px;
+                 .card
+                 {
+                     width:75%;
+                   .card-header
+                     {
+                           h1
+                    {
+                        &:after
+                        {
+                    left: 130px;
+                        }
+                    }
+                     }
+                 }
+             }
+             //////////////////////////
+                .tableqw
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 115px;
+                        }
+                    }
+                
+            }
+        }
+    }
+        //////////////////////////
+        .tableqq
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 100px;
+                        }
+                    }
+            }
+        }
+    }
+        }
+        ///////////////////
+                @media (max-width:$mainextrasmall) {
+        .tableprice
+             {
+                 margin:40px auto;
+                 margin-left: 50px;
+                 .card
+                 {
+                     width:90%;
+                   .card-header
+                     {
+                           h1
+                    {
+                        &:after
+                        {
+                    left: 120px;
+                        }
+                    }
+                     }
+                 }
+             }
+             //////////////////////////
+                .tableqw
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 105px;
+                        }
+                    }
+                
+            }
+        }
+    }
+        //////////////////////////
+        .tableqq
+    {
+          .card
+        {
+            .card-header
+            {
+                 h1
+                    {
+                        &:after
+                        {
+                    left: 90px;
+                        }
+                    }
+            }
+        }
+    }
+        }
+        ///////////////////
+         ////////////////////
+    
+//End Section Prining
+///////////////////////////////////////////////////////
+    //Start Section Twoprice
+     
+    .TwoPrice
+    {
+        margin-bottom: 160px;
+        margin-top: 120px;
+        .card
+        {
+            border-radius: 8px;
+            .imgcard
+                    {
+                        overflow: hidden;
+                         margin-left: 17px;
+                margin-top: -53px;
+                         width:90%;
+                height: 85%;
+                         border-radius: 8px;
+                        cursor: pointer;
+                           img 
+                    {
+            width:100%;
+                height: 100%;
+                border-radius: 8px;
+                box-shadow: 0 1rem 3rem rgba(0,0,0,.100);
+                         @include trans;
+                        opacity: .9;
+            
+                        &:hover
+                        {
+                            transform: scale(1.2,1.2);
+                            opacity: 1;
+                        }
+                    }
+            }
+       
+            .card-body
+            {
+                
+                h6
+                {
+                    font-size: .9rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: $mainColor;
+                    margin-top: 5px;
+//                   
+                }
+            
+                h5 
+                {
+                    color: #3c4858;
+                    font-weight: 700;
+                    margin-top: 15px;
+                    font-size: 1.15rem;
+                    text-transform: capitalize;
+                    line-height: 24px;
+                }
+                .twosmall
+                {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                           img 
+                    {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        margin-top: 2px;
+                        margin-left: -3px;
+                    }
+                    p 
+                    {
+                        position: relative;
+                        color: #777;
+                        &:after
+                        {
+                            font-family: FontAwesome;
+                            content: "\f017";
+                            top: 2px;
+                            left: -20px;
+                            font-size: 17px;
+                          color: #777;
+                            position: absolute;
+                        }
+                        &:before
+                        {
+                            content: "Sara Mike";
+                            top: 4px;
+                            left: -190px;
+                            font-size: 15px;
+                             color: #777;
+                            position: absolute;
+                        }
+                    }
+                   
+                }
+            }
+            .crdbd2
+            {
+                .twosmall
+                {
+                    p 
+                    {
+                        &:before
+                        {
+                            content: "John Henderson";
+                        }
+                    }
+                }
+            }
+             .crdbd3
+            {
+                .twosmall
+                {
+                    p 
+                    {
+                        &:before
+                        {
+                            content: "Joly Michle";
+                        }
+                    }
+                }
+            }
+        }
+        ////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////
+          
+    }
+          @media (max-width:$mainextrasmall) {
+           .TwoPrice
+         {
+              margin-bottom: 10px;
+        margin-top: 80px;
+              .card
+             {
+                 width: 80%;
+                 margin:10px auto;
+                 .card-body
+            {
+                 .twosmall
+                {
+                    p 
+                    {
+                         &:before
+                        {
+                            top: 4px;
+                            left: -200px;
+                        }
+                    }
+                }
+                
+                 }
+    }
+             
+         }
+               
+       
+        }
+        ///////////////////////////////////////////
+        @media (min-width:$mainextrasmall) and (max-width:$mainsmall - 1) {
+         .TwoPrice
+         {
+                margin-bottom: 80px;
+        margin-top: 80px;
+             .card
+             { 
+                 width: 85%;
+                 margin:10px auto;
+                  .imgcard
+                    {
+                        overflow: hidden;
+                         margin-left: 21px;
+                margin-top: -45px;
+                 }
+                 .card-body
+            {
+                 .twosmall
+                {
+                    p 
+                    {
+                         &:before
+                        {
+                            top: 4px;
+                            left: -270px;
+                        }
+                    }
+                }
+                
+                 }
+             }
+             
+            }
+    }
+        /////////////////////////////////////////////////
+              ///////////////////////////////////////////
+       @media (min-width:$mainmedium) and (max-width:$mainlarge - 1) {
+         .TwoPrice
+         {
+             .card
+             { 
+                                  .imgcard
+                    {
+                         margin-left: 14px;
+                margin-top: -40px;
+                 }
+                 .card-body
+            {
+                 .twosmall
+                {
+                    p 
+                    {
+                        margin-right: -10px;
+                         &:before
+                        {
+                            top: 4px;
+                            left: -140px;
+                               font-size: 15px;
+                        }
+                        &:after
+                        {
+                            top: 3px;
+                            left: -20px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                
+                 }
+             }
+             
+            }
+    }
+        /////////////////////////////////////////////////
+        ///////////////////////////////////////////
+      @media (min-width:$mainsmall) and (max-width:$mainmedium - 1) {
+         .TwoPrice
+         {
+             .card
+             { 
+                                  .imgcard
+                    {
+                       margin-left: 11px;
+                margin-top: -30px;
+                 }
+                 .card-body
+            {
+                h6
+                {
+                    font-size: .8rem;
+                    margin-top: 0px;    
+                }
+                h5 
+                {
+                    font-size: 1.10rem;
+                }
+                 .twosmall
+                {
+                    p 
+                    {
+                        color: transparent;
+                         &:before
+                        {
+                            top: 4px;
+                            left: -40px;
+                               font-size: 15px;
+                        }
+                        &:after
+                        {
+                            display: none;
+                        }
+                    }
+                }
+                
+                 }
+             }
+             
+            }
+    }
+        /////////////////////////////////////////////////
+        //End Section Twoprice
+    }
+  
+   
+   
+
+}

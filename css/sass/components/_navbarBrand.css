@@ -1,0 +1,69 @@
+/* line 4, E:/myyyy/Gymm/css/sass/components/_navbarBrand.scss */
+.brand {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: all .5s ease-in-out;
+  font-family: 'Lato', sans-serif;
+  margin-left: 90px; }
+  /* line 14, E:/myyyy/Gymm/css/sass/components/_navbarBrand.scss */
+  .brand:hover {
+    color: #fcd307;
+    transform: scale(1.2); }
+  /* line 19, E:/myyyy/Gymm/css/sass/components/_navbarBrand.scss */
+  .brand .brand-span-one {
+    position: relative;
+    display: inline-block;
+    background-color: #fcd307;
+    width: 4.5px;
+    height: 21px;
+    margin-bottom: -3px;
+    margin-right: 10px; }
+    /* line 28, E:/myyyy/Gymm/css/sass/components/_navbarBrand.scss */
+    .brand .brand-span-one:after {
+      content: "";
+      background-color: #fcd307;
+      width: 4.5px;
+      height: 15px;
+      position: absolute;
+      top: 4px;
+      left: -6px; }
+    /* line 38, E:/myyyy/Gymm/css/sass/components/_navbarBrand.scss */
+    .brand .brand-span-one:before {
+      content: "";
+      background-color: #fcd307;
+      width: 10px;
+      height: 4.5px;
+      position: absolute;
+      top: 8px;
+      right: -8px; }
+  /* line 49, E:/myyyy/Gymm/css/sass/components/_navbarBrand.scss */
+  .brand .brand-span-two {
+    position: relative;
+    display: inline-block;
+    background-color: #fcd307;
+    width: 4.5px;
+    height: 21px;
+    margin-bottom: -3px;
+    margin-left: 10px; }
+    /* line 58, E:/myyyy/Gymm/css/sass/components/_navbarBrand.scss */
+    .brand .brand-span-two:after {
+      content: "";
+      background-color: #fcd307;
+      width: 4.5px;
+      height: 15px;
+      position: absolute;
+      top: 4px;
+      right: -6px; }
+    /* line 68, E:/myyyy/Gymm/css/sass/components/_navbarBrand.scss */
+    .brand .brand-span-two:before {
+      content: "";
+      background-color: #fcd307;
+      width: 10px;
+      height: 4.5px;
+      position: absolute;
+      top: 8px;
+      left: -8px; }
+
+/*# sourceMappingURL=_navbarBrand.css.map */

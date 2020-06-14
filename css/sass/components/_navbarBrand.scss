@@ -1,0 +1,88 @@
+@import "E:/myyyy/Gymm/css/sass/helpers/_Variables";
+@import "E:/myyyy/Gymm/css/sass/helpers/_mixins";
+////////////////////////////////////////////////////////////////
+//  Component navbar Brand
+
+    .brand
+    {
+       
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1.15rem !important;
+        letter-spacing: 1px;
+         transition: all .5s ease-in-out;
+        font-family:'Lato', sans-serif;
+        margin-left: 90px;
+         @media (max-width:$mainextrasmall) {
+              margin-left: 40px;
+             font-size: 1.05rem !important;
+        }
+        &:hover
+        {
+            color: #fcd307;
+            transform: scale(1.2)
+        }
+        .brand-span-one
+        {
+                    position: relative;
+            display: inline-block;
+            background-color: #fcd307;
+            width: 4.5px;
+            height:21px;
+            margin-bottom: -3px; 
+            margin-right: 10px;
+                   &:after
+        {
+            content: "";
+            background-color: #fcd307;
+            width: 4.5px;
+            height:15px;
+            position: absolute;
+            top:4px;
+            left: -7px;    
+        }
+               &:before
+        {
+             content: "";
+            background-color: #fcd307;
+            width: 10px;
+            height:4.5px;
+            position: absolute;
+            top:8px;
+            right: -6px;   
+        }
+        }
+        .brand-span-two
+        {
+                    position: relative;
+            display: inline-block;
+            background-color: #fcd307;
+            width: 5px;
+            height:21px;
+            margin-bottom: -3px; 
+            margin-left: 10px;
+                   &:after
+        {
+            content: "";
+            background-color:#fcd307;
+            width: 5px;
+            height:15px;
+            position: absolute;
+            top:4px;
+            right: -8px;    
+        }
+               &:before
+        {
+             content: "";
+            background-color: #fcd307;
+            width: 10px;
+            height:4.5px;
+            position: absolute;
+            top:8px;
+            left: -7px;   
+        }
+        }
+    
+
+    }

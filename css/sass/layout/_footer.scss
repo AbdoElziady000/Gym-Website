@@ -1,0 +1,207 @@
+@import "E:/myyyy/Gymm/css/sass/helpers/_Variables";
+@import "E:/myyyy/Gymm/css/sass/helpers/_mixins";
+@import 'E:/myyyy/Gymm/css/sass/components/_buttall';
+////////////////////////////////////////////////////////////////
+footer
+{
+background-color: #000;
+    padding-top: 80px;
+     /////////////////////////////////////\////
+    //// Start Footerrrrrrrr /////////////////////////
+    .rowfoot1
+    {
+    .endu
+    {
+  text-align: left;
+        h4
+        {
+            color: $mainColor;
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-family: 'Lato', sans-serif;
+        }
+        p 
+        {
+            color: gray;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-family: 'Lato', sans-serif;
+            strong
+            {
+                color: #fff;
+            }
+        }
+        .enduoc2
+            {
+                margin-top: 40px;
+               .oc2
+                {
+                    margin-top: 15px;
+                     span i {
+                    font-size: 14px;
+                          color: gray;
+                    margin-right: 15px;
+                         cursor: pointer;
+                         @include trans;
+                         &:hover
+                         {
+                             transform: scale(1.7,1.7);
+                             color: $mainColor;
+                             box-shadow: 0 2rem 2rem rgba(252,211,7,.100);
+                         }
+                }
+             span.par{
+                     font-size:16px;
+                  color: gray;
+                }
+                }
+                
+            }
+          .enduoc3
+            {
+                    margin-top: 50px;
+                margin-bottom: 30px;
+                span i
+            {
+                margin-right: 20px;
+                font-size: 19px;
+                   color: gray;
+                cursor: pointer;
+                 @include trans;
+                &:hover
+                {
+                   color: $mainColor; 
+                transform: scale(1.7);box-shadow: 0 2rem 2rem rgba(252,211,7,.100);
+                }
+            } 
+                
+            }
+    }
+    /////////////////////////
+    .endu2
+    {
+        font-family: 'Lato', sans-serif;
+h4
+{
+     margin-top: 10px;
+     margin-bottom: 20px;
+    color: $mainColor; 
+    letter-spacing: 1px;  
+    font-size: 1.4rem;
+}
+
+ul li 
+{
+font-weight: 500;
+ letter-spacing: 1px;
+    padding-top:20px;
+    transition:all .5s ease-in-out;
+    cursor: pointer;
+    color:  $WsColor;
+    &:hover
+{
+    transform: translateX(10px);
+    color: $mainColor;
+}
+    i
+{
+    color: $mainColor;
+    margin-right:5px;
+}
+}
+
+    }
+ ///////////////////////////////////////
+      .endu3
+    {
+        font-family: 'Lato', sans-serif;
+h4
+{
+     margin-top: 10px;
+     margin-bottom: 20px;
+    color: $mainColor; 
+    letter-spacing: 1px;  
+    font-size: 1.4rem;
+}
+    .col
+        {
+            margin: 2px 2px;
+            overflow: hidden;
+            cursor: pointer;
+            padding: 0;
+            img 
+            {
+                width:100%;
+                height: 100px;
+                opacity: .8;
+            @include trans;
+            &:hover
+            {
+                opacity: 1;
+                transform: scale(1.2,1.2);
+            }
+            }
+        }
+    }
+ ///////////////////////////////////////////////////
+              @media (max-width:$mainsmall - 1) {
+      .endu3
+    {
+        .col
+        {
+            img 
+            {
+                height: 140px;
+            }
+        }
+        }
+        }
+        //////////////////////////////
+    }
+        ///////////////////////////////////////////////////
+    .rowfoot2
+    {
+        margin: 60px auto 0px;
+        padding-bottom: 10px;
+         font-family: 'Lato', sans-serif;
+        border-top: 1px solid gray;
+             .first-footer
+    {
+        p{
+         text-transform: capitalize;
+            font-size: 17px;
+            margin-top: 23px;
+        color: gray;
+            strong {
+                color: $mainColor
+            }
+        }
+    }
+    nav
+    {
+         margin-top: 23px;
+        .breadcrumb
+        {
+            background-color: transparent;
+            padding: 0px;
+            .breadcrumb-item 
+            {
+                a 
+                {
+                    color: gray;
+                }
+            }
+            .active
+            {
+                color: $mainColor;
+            }
+        }  
+    }
+    }
+     //// End Footerrrrrrrr /////////////////////////
+ ///////////////////////////////////////////////////////   
+}

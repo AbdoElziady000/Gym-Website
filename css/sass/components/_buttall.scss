@@ -1,0 +1,77 @@
+@import "E:/myyyy/Gymm/css/sass/helpers/_Variables";
+@import "E:/myyyy/Gymm/css/sass/helpers/_mixins";
+//////////////////////////////////////////////
+// box-shadow: 0 2rem 3rem rgba(0,0,0,.200);
+// box-shadow: 0 2rem 2rem rgba(252,211,7,.400);
+//font-family: 'Lato', sans-serif;
+//font-family: 'Comic Neue', cursive;
+//font-family: 'Josefin Sans', sans-serif;
+///////////////////////////////////////////////
+// Head Of Section
+ .headsec
+{
+     font-size: 47px;
+            font-weight: 700;
+            font-style: italic;
+    text-transform: uppercase;
+}
+//////////////////////////////////////////////
+//paragraphhhhhhhh
+.gymp
+{
+         color: #777;
+    text-transform: capitalize;
+            font-size: 16px;
+            line-height: 1.9rem;
+            font-weight: 500;
+}
+///////////////////////////////////////////
+//Button Basic
+.butt
+{
+   display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: $BsColor;
+     color: $mainColor;
+    border: 1px solid  transparent;
+    padding: 1rem;
+    font-size: .8rem;
+     font-weight: 700;
+    line-height: 1.5;
+     letter-spacing: 1px;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.200);
+    &:hover
+    {
+         background-color: $mainColor;
+     color: $BsColor;
+        transform: scale(1.1,1.1);
+          box-shadow: 0 1rem 1rem rgba(0,0,0,0.400);
+    }
+}
+////////////////////////////////////////////////////////
+//Button Video Click Big
+.buttbig
+        {
+            width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #000;
+     position: absolute;
+//    top: 60%;
+//    left: 45%;
+    cursor: pointer;
+        }
+//Button Video Click Big
+        .buttsmall
+        {
+         width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    border:10px solid transparent;
+    border-left: 12px solid yellow;
+        }

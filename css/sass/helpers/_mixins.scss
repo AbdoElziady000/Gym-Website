@@ -1,0 +1,87 @@
+@import "E:/myyyy/Gymm/css/sass/helpers/_Variables.scss";
+
+// Mixins Media Query
+
+//$mainlarge :1200px;
+@mixin EtraLarge {
+    @media (min-width:$mainlarge) { 
+        @content;
+    }
+}
+
+//$mainlarge :1200px; $mainmedium :992px;
+@mixin Large {
+    @media (min-width:$mainmedium) and (max-width:$mainlarge - 1) {
+        @content;
+    }
+}
+
+//$mainmedium :992px; $mainsmall :768px;
+@mixin Medium {
+    @media (min-width:$mainsmall) and (max-width:$mainmedium - 1) {
+        @content;
+    }
+}
+
+//$mainsmall :768px; $mainextrasmall :576px;
+@mixin small {
+    @media (min-width:$mainextrasmall) and (max-width:$mainsmall - 1) {
+        @content;
+    }
+}
+
+
+//$mainextrasmall :576px;
+@mixin Etrasmall {
+    @media (max-width:$mainextrasmall) {
+        @content;
+    }
+}
+
+//$mainsmall :767px;
+@mixin smallToEnd {
+    @media (max-width:$mainsmall - 1) {
+        @content;
+    }    
+}
+
+//$mainmedium :991px;
+@mixin MediumToEnd {
+    @media (max-width:$mainmedium - 1) {
+        @content;
+    }
+}
+///////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+// Mixin Overlay
+@mixin overlaay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+///////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//Mixin Keyframes
+@mixin keyframe ($aniname)
+{
+    @-webkit-keyframes #{$aniname}
+    { @content;}
+    @-moz-keyframes #{$aniname}
+    { @content;}
+    @keyframes #{$aniname}
+    { @content;}
+}
+
+
+///////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//Mixin Transition
+@mixin trans
+{
+        transition: all .3s ease-in-out;
+}

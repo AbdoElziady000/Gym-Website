@@ -1,0 +1,387 @@
+@import 'E:/myyyy/Gymm/css/sass/components/_navbarBrand';
+@import 'E:/myyyy/Gymm/css/sass/components/_Tobbutton';
+@import "E:/myyyy/Gymm/css/sass/helpers/_Variables";
+@import "E:/myyyy/Gymm/css/sass/helpers/_mixins";
+@import 'E:/myyyy/Gymm/css/sass/components/_buttall';
+////////////////////////////////////////////////////////////////
+
+
+header
+{
+.FirstHeader
+{
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    .HeadNews
+    {
+        padding-top: 6px;
+        padding-bottom: 8px;
+        color: #fff;
+        font-size: 15px;
+        background-color: rgba(3,3,3,0.3);
+        .fhs3
+        {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        span
+        {
+            cursor: pointer;
+             transition: all .5s ease-in-out;
+            &:hover
+            {
+                            color:  #fcd307;
+            }
+        }
+        i
+        {
+            padding-right: 7px;
+        }
+    }
+    
+    .navbar
+    {
+        margin-top: 9px;
+        padding: 0rem 1rem .5rem;
+        background-color:transparent;
+        .navbar-toggler
+        {
+            padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0rem;
+    transition: all .5s ease-in-out;
+ span i {
+    font-size:26px;
+  transition: all .5s ease-in-out;
+}
+            &:focus {
+    outline: 0px;
+}
+        }
+        .navbar-nav
+        {
+            margin-right: 60px;
+            .nav-link
+            {
+                color: #fff;
+                text-transform: capitalize;
+                padding: 0px;
+                padding-bottom: 3px;
+                padding-top: 3px;
+                margin: 10px 17px;
+                font-size: 17px;
+                 transition: all .5s ease-in-out;
+                position: relative;
+                font-family: 'Josefin Sans', sans-serif; 
+                &:hover
+                {
+                     color:  #fcd307;
+                }
+                &:after
+                {
+                    content: "";
+                    background-color:  #fcd307;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                        transition: all .5s ease-in-out;
+                    width: 0;
+                    height: 2px;
+                }
+                 
+                &:hover:after
+                {
+                     width: 100%;
+                }
+                
+            }
+            .cooolo
+            {
+                color: #fcd307;
+            }
+            .search i
+        {
+            color: #fff;
+            margin-top: 17px;
+            margin-left: 5px;
+            cursor: pointer;
+              transition: all .5s ease-in-out;
+            &:hover
+            {
+                color:  #fcd307;
+            }
+        }
+        }
+        
+       
+    }
+    /////////////////////////////////////////////////////
+     @media (min-width:$mainextrasmall) and (max-width:$mainmedium - 1) {
+     .navbar
+         {
+             background-color: rgba(0,0,0,0.6);
+             margin-top: 0;
+              padding: .8rem 1rem;
+             .navbar-toggler
+             {
+              margin-right: 50px !important;  
+                  font-size: 1.85rem  !important;
+             }
+              .nav-link
+{
+      width:13%;   
+    }
+         }
+    }    
+    ///////////////////////////////////////////////////
+     @media (max-width:$mainextrasmall) {
+     .navbar
+         {
+             background-color: rgba(0,0,0,0.6);
+             margin-top: 0;
+              padding: .8rem 1rem;
+             .navbar-toggler
+             {
+              margin-right: 30px !important;  
+                  font-size: 1.85rem  !important;
+             }
+              .nav-link
+{
+      width:13%;   
+    }
+         }
+    }    
+    ///////////////////////////////////////////////////
+}
+
+
+
+.secondHeader
+{
+      z-index: 0;
+    position: relative;
+   .overlay
+    {
+         z-index: 1;
+          position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(3,3,3,0.4);
+    }
+    .carousel
+    {
+       
+    .carousel-indicators
+        {
+            li
+            {
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: .5;
+    transition: opacity .7s ease;
+            }
+            .active
+            {
+                background-color:  #fcd307;
+                opacity: 1;
+            }
+        }
+        
+        .carousel-caption
+        {
+            margin-bottom: 60px;
+            text-transform: uppercase;
+            color: #fcd307;
+               text-align: center;
+            h5
+            {
+                     margin-bottom: -50px;
+font-size: 5vw;
+    color:  #fcd307;
+    line-height: .9;
+    letter-spacing: 1px;
+                                font-weight: 900;
+            }
+             h5:last-of-type
+            {
+                margin-left: -60px;
+            }
+            
+            p
+            {
+                font-size: 15vw;
+                margin-left: -70px;
+                                font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:  #fcd307;
+}
+            h6
+            {
+                font-size: 12px;
+                                font-weight: 900;
+                letter-spacing:10px;
+                margin-top: -40px;
+                word-spacing: 2px;
+              span
+                {
+                    font-weight: 900;
+                    font-size: 30px;
+                }
+            }
+
+            }
+        }
+    }
+    /////////////////////////////////////////////
+     @media (min-width:$mainextrasmall) and (max-width:$mainmedium - 1) {
+         .secondHeader {
+             .carousel {
+                 .carousel-caption {
+                     margin-bottom: 80px;
+
+                     h5 {
+                         margin-bottom: -50px;
+                     }
+
+                     h5:last-of-type {
+                         margin-left: -50px;
+                         margin-bottom: -30px;
+                     }
+
+                     p {
+                         margin-left: -40px;
+                     }
+                 }
+             }
+         }
+     }
+
+/////////////////////////////////////////
+    /////////////////////////////////////////////
+     @media (min-width:$mainextrasmall) and (max-width:$mainsmall - 1) {
+         .secondHeader {
+             .carousel {
+                 .carousel-caption {
+                     margin-bottom: 110px;
+                     margin-left: 20px;
+                     h5:last-of-type {
+                         margin-bottom: -20px;
+                     }
+                 }
+             }
+         }
+     }
+
+/////////////////////////////////////////
+     /////////////////////////////////////////////
+     @media (max-width:$mainextrasmall){
+         .secondHeader {
+            
+             .carousel {
+                  .carousel-item img
+                 {
+                     height: 500px !important;
+                 }
+                 .carousel-caption {
+                     margin-bottom: 90px;
+                     margin-left: 20px;
+                     h5:last-of-type {
+                         margin-bottom: -20px;
+                         margin-left: -20px;
+                     }
+                     p
+            {
+                margin-left: -30px;
+                     }
+                        h6
+            {
+                font-size: 11px;
+                     }                
+                 }
+             }
+         }
+     }
+////////////////////////////////////////
+}
+//////////////////////////////////////
+.modal
+    {
+        z-index: 9;
+            .modal-content
+            {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                
+                 .modal-header
+                {
+                     background-color: #000;
+                    border-top: 2px solid $mainColor;
+                }
+                .modal-header
+                {               
+                   
+                    .modal-title
+                    {
+                        font-size: 30px;
+                         font-weight: 700;
+            font-style: italic;
+    text-transform: uppercase;
+                         margin-left: 140px;
+                        color: #000;
+                    }
+                }
+                .modal-body
+                {
+                    .form-control
+                    {
+    padding: .375rem .75rem;
+    color: $BsColor;
+                        border-radius: 0;
+    background-color:transparent;
+                    &:focus
+                    {
+                        border:2px solid $mainColor;
+                        outline: none;
+                       box-shadow: 0 2rem 3rem rgba(252,211,7,.080);
+                    }
+                    }
+                }
+                .modal-footer
+                {
+                    border-top: 0;
+                    .butt
+                    {
+                     background-color: $BsColor;
+     color: $mainColor; 
+    padding: .7rem 1.4rem;
+    font-size: .8rem;
+                      
+                        text-transform: uppercase;
+    &:hover
+    {
+        transform:translateY(-15px);
+         box-shadow: 0 2rem 2rem rgba(252,211,7,.080);
+    }   
+                    }
+                }
+            }
+    }
+    ///////////////////////////////////
+
+  
+.colorto
+{
+    color:  #fcd307;
+}
